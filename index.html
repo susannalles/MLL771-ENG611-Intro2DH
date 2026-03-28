@@ -47,14 +47,83 @@
 </head>
 <body>
 
-    <h1>Step 1: Building Your First Web Page Locally</h1>
+  <h1>Creating your first website and setting up a work environment in GitHub</h1>
+  
+    <!DOCTYPE html>
+<html>
 
-    <p>The very first step is to understand how a website works. For this reason, I want you to download this same folder and work from your computers. To make your first website you only need a single folder on your computer, two files, and a browser.
-        That is all a web page really is. Download this, save it in your Desktop or another location that you will easily find it.  
+<head>
+    <title>Creating Your First Website</title>
+    <style>
+        body {
+            background-color: #e6e2d3;
+            font-family: "PT Sans", Helvetica, Arial, sans-serif;
+            max-width: 740px;
+            margin: 60px auto;
+            padding: 0 24px;
+            line-height: 1.7;
+        }
+        h1 {
+            color: #bd5734;
+        }
+        h2 {
+            color: #bd5734;
+            margin-top: 40px;
+        }
+        p {
+            color: #587e76;
+        }
+        code {
+            background-color: #d6d1c0;
+            color: #3a3a3a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.95em;
+        }
+        .box {
+            border-left: 4px solid #bd5734;
+            background-color: #d6d1c0;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .box p {
+            margin: 0;
+            color: #3a3a3a;
+        }
+        .task {
+            border-left: 4px solid #587e76;
+            background-color: #d6e8e5;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .task p {
+            margin: 0;
+            color: #3a3a3a;
+        }
+        .task ul {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+            color: #3a3a3a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Creating Your First Website and Setting Up a Work Environment in GitHub</h1>
+
+    <h2>Step 1: Building Your First Web Page Locally</h2>
+    <p>
+        The very first step is to understand how a website works. For this reason, I want you to
+        download this same folder and work from your own computers. To make your first website you
+        only need a single folder on your computer, two files, and a browser.
+        That is all a web page really is. Download this folder, and save it on your Desktop
+        or another location you will easily find it.
     </p>
 
-    <h2>What is this folder?</h2>
-
+    <h2>What Is This Folder?</h2>
     <p>
         Think of your project folder as a <strong>small library</strong> that lives on your desk.
         Right now, only you can open it. Your browser is the reader —
@@ -71,15 +140,13 @@
         </p>
     </div>
 
-    <h2>How does CSS connect to HTML?</h2>
-
+    <h2>How Does CSS Connect to HTML?</h2>
     <p>
         Look at the <code>&lt;head&gt;</code> section at the top of this file.
         You will find a <code>&lt;style&gt;</code> block — that is where the CSS lives <em>inside</em> the HTML itself.
         The browser reads the <code>&lt;head&gt;</code> first, learns the visual rules,
         and then applies them as it renders the <code>&lt;body&gt;</code>.
     </p>
-
     <p>
         For example, the CSS rule <code>h1 { color: #bd5734; }</code> tells the browser:
         <em>"every time you see an <code>&lt;h1&gt;</code> tag, make the text that warm reddish-brown."</em>
@@ -94,19 +161,24 @@
         </p>
     </div>
 
-    <h2>Why does this matter before GitHub?</h2>
-
+    <h2>Your Task for Step 1</h2>
     <p>
-        Everything you see here — this layout, these colors, this text —
-        is just two things: <strong>a file your browser can read</strong>, and <strong>CSS rules telling it how to look</strong>.
-        In the next steps, we will take this exact folder and put it on GitHub,
-        so that anyone in the world can open it in their browser, not just you.
+        Now it is your turn. In the STEP1 folder, open <code>index.html</code> in your text editor and make it your own.
+        This is still just your private folder — nothing goes online yet. Experiment freely.
     </p>
 
-    <p>
-        The page does not change. The folder does not change.
-        We are simply moving the library from your desk to a public shelf.
-    </p>
+    <div class="task">
+        <p>✏️ <strong>Before moving to Step 2, make sure you have:</strong></p>
+        <ul>
+            <li>Replaced the <code>&lt;title&gt;</code> with your own name or project title</li>
+            <li>Changed at least one color in the CSS (background, heading, or paragraph)</li>
+            <li>Added at least two <code>&lt;h1&gt;</code> or <code>&lt;h2&gt;</code> headings with your own text</li>
+            <li>Written content inside the <code>&lt;p&gt;</code> paragraphs</li>
+            <li>Included at least one link using <code>&lt;a href="..."&gt;</code></li>
+            <li>Added at least one image using <code>&lt;img src="..."&gt;</code></li>
+        </ul>
+    </div>
 
 </body>
+
 </html>
