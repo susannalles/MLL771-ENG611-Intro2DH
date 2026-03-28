@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--This is a comment for your records only-->
+  
+    <title>Step 1: Your First Web Page</title>
+
+  <!-- This are the instructions that give style to your page. In Step 2, you will see how this CSS instructions can go into a separate file. -->
+    <style>
+        body {
+            background-color: #e6e2d3;
+            font-family: "PT Sans", Helvetica, Arial, sans-serif;
+            max-width: 740px;
+            margin: 60px auto;
+            padding: 0 24px;
+            line-height: 1.7;
+        }
+        h1 {
+            color: #bd5734;
+        }
+        h2 {
+            color: #bd5734;
+            margin-top: 40px;
+        }
+        p {
+            color: #587e76;
+        }
+        code {
+            background-color: #d6d1c0;
+            color: #3a3a3a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.95em;
+        }
+        .box {
+            border-left: 4px solid #bd5734;
+            background-color: #d6d1c0;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .box p {
+            margin: 0;
+            color: #3a3a3a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Step 1: Building Your First Web Page Locally</h1>
+
+    <p>The very first step is to understand how a website works. For this reason, I want you to download this same folder and work from your computers. To make your first website you only need a single folder on your computer, two files, and a browser.
+        That is all a web page really is. Download this, save it in your Desktop or another location that you will easily find it.  
+    </p>
+
+    <h2>What is this folder?</h2>
+
+    <p>
+        Think of your project folder as a <strong>small library</strong> that lives on your desk.
+        Right now, only you can open it. Your browser is the reader —
+        when you open an <code>index.html</code> file, the browser reads it
+        and displays it as a page, exactly like opening a book.
+        No internet needed. No server in the cloud. Just your computer talking to itself.
+    </p>
+
+    <div class="box">
+        <p>
+            📁 <strong>my-first-website/</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── index.html &nbsp;← the structure and content<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;└── style.css &nbsp;&nbsp;← the colors and fonts (optional for now)
+        </p>
+    </div>
+
+    <h2>How does CSS connect to HTML?</h2>
+
+    <p>
+        Look at the <code>&lt;head&gt;</code> section at the top of this file.
+        You will find a <code>&lt;style&gt;</code> block — that is where the CSS lives <em>inside</em> the HTML itself.
+        The browser reads the <code>&lt;head&gt;</code> first, learns the visual rules,
+        and then applies them as it renders the <code>&lt;body&gt;</code>.
+    </p>
+
+    <p>
+        For example, the CSS rule <code>h1 { color: #bd5734; }</code> tells the browser:
+        <em>"every time you see an <code>&lt;h1&gt;</code> tag, make the text that warm reddish-brown."</em>
+        The rule <code>body { background-color: #e6e2d3; }</code> sets the sandy background you are reading on right now.
+    </p>
+
+    <div class="box">
+        <p>
+            💡 <strong>Try it:</strong> Open this file in a text editor, change <code>#bd5734</code>
+            to <code>blue</code> inside the <code>h1</code> rule, save, and refresh your browser.
+            You just edited a live design.
+        </p>
+    </div>
+
+    <h2>Why does this matter before GitHub?</h2>
+
+    <p>
+        Everything you see here — this layout, these colors, this text —
+        is just two things: <strong>a file your browser can read</strong>, and <strong>CSS rules telling it how to look</strong>.
+        In the next steps, we will take this exact folder and put it on GitHub,
+        so that anyone in the world can open it in their browser, not just you.
+    </p>
+
+    <p>
+        The page does not change. The folder does not change.
+        We are simply moving the library from your desk to a public shelf.
+    </p>
+
+</body>
+</html>
