@@ -185,6 +185,117 @@
     </p>
 </div>
 
+  <h2>Step 3: Using a Jekyll Template — Academic Pages</h2>
+
+<p>
+    So far you have built a website by writing HTML and CSS by hand. That is a great way
+    to understand how the web works. But in practice, most websites are not built from
+    scratch, they use <strong>templates</strong>. A template gives you a ready-made
+    structure, design, and layout. You only need to replace the content with your own.
+</p>
+
+<p>
+    One of the most popular tools for this on GitHub Pages is <strong>Jekyll</strong>.
+    Jekyll is a system that takes simple text files —written in a format called <a href="https://www.markdownguide.org/getting-started/">Markdown</a>— and automatically converts them into a full website. You write your biography, your publications, your blog posts as plain
+    text. Jekyll handles all the HTML and CSS for you.
+</p>
+
+<p>
+    The template we will use is called <strong>Academic Pages</strong>
+    (<a href="https://github.com/academicpages/academicpages.github.io">github.com/academicpages</a>),
+    a widely used template designed specifically for researchers, professors, and students
+    who want a clean professional site with sections for a biography, publications, teaching,
+    and a blog. The goal here is not to master Jekyll — it is to understand that
+    <em>you can adopt an entire working website in minutes, and then simply replace
+    the content with your own. If you prefer another template, check the <a href="https://jekyllthemes.io/free">the Jekyll free template list</a></em>.
+</p>
+
+<h3>What you are about to do</h3>
+
+<p>
+    You are going to take the Academic Pages template and make it yours. This means
+    <strong>replacing everything currently in your <code>username.github.io</code>
+    repository</strong> with the files from this template. Think of it as moving out
+    of your hand-built house and into a fully furnished one — you just need to put
+    your own belongings inside.
+</p>
+
+<h3>Step by step</h3>
+
+<ol>
+    <li>
+        <strong>Go to the Academic Pages repository.</strong> Open
+        <a href="https://github.com/academicpages/academicpages.github.io">github.com/academicpages/academicpages.github.io</a>
+        in your browser.
+    </li>
+    <li>
+        <strong>Use the template.</strong> Click the green <em>"Use this template"</em> button
+        at the top right, then select <em>"Create a new repository"</em>.
+        In the repository name field, type exactly <code>username.github.io</code>
+        (using your own GitHub username). This will create a fresh copy of the template
+        directly in your account — no manual downloading needed.
+    </li>
+    <li>
+        <strong>Activate GitHub Pages.</strong> Go to your new repository's
+        <em>Settings</em> → <em>Pages</em>. Under <em>Branch</em>, select <code>main</code>
+        and click Save. After 1–2 minutes, your new site will be live at
+        <code>https://username.github.io</code>.
+    </li>
+    <li>
+        <strong>Make it yours — start with <code>_config.yml</code>.</strong>
+        This is the most important file in the template. Open it in GitHub by clicking on it,
+        then click the pencil icon to edit. Replace the placeholder values with your own:
+        your name, your institution, a short description of yourself, and your URL.
+        Commit the changes when done. This one file updates your name and description
+        across the entire site automatically.
+    </li>
+    <li>
+        <strong>Edit your biography.</strong> Go to the <code>_pages/</code> folder
+        and open <code>about.md</code>. This is your homepage text. It is written in
+        Markdown — a very simple format where <code>**bold**</code> makes text <strong>bold</strong>
+        and <code># Heading</code> creates a heading. Replace the placeholder text with
+        a short bio of yourself.
+    </li>
+    <li>
+        <strong>Add or remove sections.</strong> The navigation menu is controlled by
+        <code>_data/navigation.yml</code>. If you do not need a Publications or Teaching
+        section yet, you can simply delete those lines from the file and they will
+        disappear from your site.
+    </li>
+</ol>
+
+<div class="box">
+    <p>
+        📁 <strong>The key files to know in Academic Pages:</strong><br><br>
+        &nbsp;&nbsp;<code>_config.yml</code> &nbsp;← your name, title, and site-wide settings<br>
+        &nbsp;&nbsp;<code>_pages/about.md</code> &nbsp;← your homepage biography<br>
+        &nbsp;&nbsp;<code>_posts/</code> &nbsp;← blog posts, each one a separate text file<br>
+        &nbsp;&nbsp;<code>_data/navigation.yml</code> &nbsp;← the navigation menu<br>
+        &nbsp;&nbsp;<code>images/</code> &nbsp;← your profile photo and other images
+    </p>
+</div>
+
+<div class="box">
+    <p>
+        💡 <strong>What happened to HTML and CSS?</strong> They are still there — Jekyll
+        generates them automatically from your text files every time you save a change.
+        You do not need to touch them unless you want to customize the design deeply.
+        This is exactly the point of a template: the structure is already built.
+        Your job is to fill it with your content.
+    </p>
+</div>
+
+<div class="task">
+    <p>✏️ <strong>Before finishing Step 3, make sure you have:</strong></p>
+    <ul>
+        <li>Created your repository from the Academic Pages template</li>
+        <li>Confirmed the site is live at <code>https://username.github.io</code></li>
+        <li>Edited <code>_config.yml</code> with your real name and description</li>
+        <li>Replaced the placeholder text in <code>_pages/about.md</code> with your own bio</li>
+        <li>Removed at least one section from the navigation that you do not need yet</li>
+    </ul>
+</div>
+
 </body>
 
 </html>
