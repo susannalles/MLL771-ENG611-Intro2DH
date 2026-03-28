@@ -1,36 +1,97 @@
 <!DOCTYPE html>
 <html>
-<!--This is comment, and everything in comment does not appear in the browser. -->
+  
+<!--This is a comment, and everything inside a comment does not appear in the browser.
+    Comments are notes for YOU (and your future self). Use them freely. -->
+
 <head>
-  <!-- This is the name of your website and it will appear in the tab of your browser. -->
-    <title>Your title</title>
 
-  <!--What follow are the instructions that give style to your website. In the next step these instructions will be in a separate file.  -->
-    <style>
-        body {
-            background-color: #e6e2d3;
-            font-family: "PT Sans", Helvetica, Arial, sans-serif;
-        }
+  <!-- This is the name of your website. It appears in the browser tab at the top of your screen. -->
+  <title>Your Title Here</title>
 
-        h1 {
-            color: #bd5734;
-        }
+  <!-- 
+       STYLE SECTION
+       Everything below is CSS: a set of visual rules that tell the browser
+       how your page should look — colors, fonts, sizes, spacing.
+       For now, this lives inside the HTML file itself, inside the <style> tag.
+       In the next step, we will move it to a separate file called style.css.
+ -->
+  <style>
 
-        p {
-            color: #587e76;
-        }
-    </style>
+    /* This rule applies to the whole page (the "body").
+       Try changing the background-color to another hex code or a color name like "white", "navy", or "papayawhip".
+       Hex codes are 6-digit color codes that start with #. Find them at: https://coolors.co */
+    body {
+      background-color: #e6e2d3;
+
+      /* This sets the font for the whole page.
+         The browser tries "PT Sans" first; if it is not available, it falls back to Helvetica, then Arial.
+         Try replacing "PT Sans" with: "Georgia", "Courier New", or "Verdana" */
+      font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    }
+
+    /* This rule styles all <h1> headings on your page.
+       Change the color value below — try a hex code or a plain color name. */
+    h1 {
+      color: #bd5734;
+    }
+
+    /* This rule styles all <p> paragraphs on your page. */
+    p {
+      color: #587e76;
+    }
+
+    /* -----------------------------------------------------------------------
+       CHALLENGE: Add a new rule here for <h2> headings.
+       Give it a different color than your <h1>.
+       Then add an <h2> tag somewhere in the <body> below and see it appear.
+    ----------------------------------------------------------------------- */
+
+  </style>
+
 </head>
 
 <body>
 
-  <!--Write here some headings and some content for your paragraphs. -->
-  
-    <h1>This is a heading</h1>
-  
-    <p>This is a paragraph. And this is a <a href="https://en.wikipedia.org/wiki/Cinnamon_roll">link</a>.</p>
+  <!-- 
+       CONTENT SECTION
+       Everything below is what actually appears in the browser window.
+       HTML uses "tags" like <h1>, <p>, <a>, and <img> to structure content.
+ -->
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Cinnamon_roll_in_Stockholm.jpg" width="150px" height="150px" title="sample online image"> 
+  <!-- <h1> is your main heading. There should usually be only one per page.
+       Replace the text below with your own title. -->
+  
+  <h1>This is a Heading</h1>
+
+  <!-- <p> is a paragraph of text.
+       Write anything you like between the opening <p> and closing </p> tags. -->
+  <p>This is a paragraph. You can write sentences here just like in a word processor.</p>
+
+  <!-- This paragraph contains a link.
+       The <a href="..."> tag creates a clickable link.
+       Replace the URL inside the quotes with any web address you like.
+       Replace the visible text ("link") with something descriptive. -->
+  <p>This is a paragraph with a <a href="https://en.wikipedia.org/wiki/Cinnamon_roll">link to an article on Cinnamon Rolls</a> inside it.</p>
+
+  <!-- This is an image tag. It does not need a closing tag.
+       src="..." is the address of the image — it can be a URL (online) or a filename (local).
+       width and height control the display size in pixels.
+       title="..." shows a tooltip when you hover over the image.
+       CHALLENGE: Replace the src URL with an image of your own choice from Wikipedia or another site. -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Cinnamon_roll_in_Stockholm.jpg"
+       width="150px"
+       height="150px"
+       title="A cinnamon roll in Stockholm — sample online image">
+
+  <!-- -----------------------------------------------------------------------
+       YOUR TURN:
+       Below this comment, add:
+         - At least one more <h1> or an <h2> heading
+         - At least two more <p> paragraphs with your own text
+         - A link inside one of those paragraphs
+         - If you're feeling adventurous, another <img> from a URL of your choice
+  ----------------------------------------------------------------------- -->
+
 </body>
-
 </html>
